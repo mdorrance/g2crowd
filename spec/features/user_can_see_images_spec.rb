@@ -19,6 +19,16 @@ RSpec.describe "Index page", type: :feature do
       within("#callouts") do
         expect(page).to have_css "img"
       end
+
+      within("table") do
+        expect(page).to have_css "tr"
+        expect(page).to have_css "th"
+        expect(page).to have_css "td"
+        expect(page).to have_content "My Table"
+        expect(page).to have_content "Row 1 Column 1"
+        expect(page).to have_content "Row 2 Column 2"
+        expect(page).to have_content "Row 3 Column 3"
+      end
     end
   end
 end

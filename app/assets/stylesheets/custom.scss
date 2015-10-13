@@ -2,6 +2,10 @@ $light-gray:              #a7a7a8 !default;
 $dark-gray:               #5e5e5e;
 $black:                   #333333;
 $lavender:                #9296a8;
+$white:                   #ffffff;
+$light-lavender:          #e8eaeb;
+$off-white:               #f5f5f5;
+$med-lavender:            #dfdfef;
 
 .container {
   width: 960px;
@@ -64,4 +68,28 @@ nav {
   img:last-child {
     margin-left: 26px;
   }
+}
+table {
+  width: 100%;
+  border: 1px solid $med-lavender;
+  margin-bottom: 20px;
+  th, td {
+    width: 33%;
+    text-align: center;
+    border: 1px solid $med-lavender;
+
+  }
+  th {
+    background-color: $light-lavender;
+  }
+  tr {
+    height: 50px;
+  }
+  tr:nth-child(even) {
+    background-color: $white;
+  }
+  tr:nth-child(odd) {
+    background-color: $off-white;
+  }
+
 }
