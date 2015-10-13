@@ -15,6 +15,10 @@ RSpec.describe "Index page", type: :feature do
       within("nav") do
         expect(page).to have_css "button"
       end
+
+      within("#callouts") do
+        expect(page).to have_css "img"
+      end
     end
   end
 end
