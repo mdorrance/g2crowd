@@ -1,0 +1,30 @@
+$light-gray:              #a7a7a8 !default;
+$black:                   #333333;
+
+.container {
+  width: 960px;
+}
+
+header {
+  background-color: $black;
+  margin-bottom: 20px;
+    img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: $light-gray;
+    }
+    .main {
+      height: 130px;
+      width: 300px;
+      margin-left: 40px;
+      margin-right: 260px;
+    }
+    .left, .right {
+      height: 130px;
+      width: 140px;
+    }
+    .left {
+      margin-right: 20px;
+    }
+
+}

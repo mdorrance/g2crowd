@@ -11,6 +11,10 @@ RSpec.describe "Index page", type: :feature do
         expect(page).to have_css "img.left"
         expect(page).to have_css "img.right"
       end
+
+      within("nav") do
+        expect(page).to have_css "button"
+      end
     end
   end
 end
