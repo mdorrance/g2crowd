@@ -1,9 +1,12 @@
 $light-gray:              #a7a7a8 !default;
 $dark-gray:               #5e5e5e;
 $black:                   #333333;
+$lavender:                #9296a8;
 
 .container {
   width: 960px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 header {
@@ -41,9 +44,24 @@ nav {
     width: 120px;
   }
   button:first-child {
-    margin-left: 118px;
+    margin-left: 131px;
   }
   button:last-child {
-    margin-right: 118px;
+    margin-right: 131px;
+  }
+}
+
+#callouts {
+  margin-bottom: 20px;
+  img {
+    background: $lavender;
+    width: 300px;
+    height: 300px;
+  }
+  img:first-child {
+    margin-right: 26px;
+  }
+  img:last-child {
+    margin-left: 26px;
   }
 }
