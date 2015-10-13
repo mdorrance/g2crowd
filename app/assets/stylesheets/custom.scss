@@ -1,4 +1,5 @@
 $light-gray:              #a7a7a8 !default;
+$dark-gray:               #5e5e5e;
 $black:                   #333333;
 
 .container {
@@ -26,5 +27,23 @@ header {
     .left {
       margin-right: 20px;
     }
+}
 
+nav {
+  background-color: $dark-gray;
+  margin-bottom: 20px;
+  button {
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 10px;
+    border: solid #000000 1px;
+    height: 40px;
+    width: 120px;
+  }
+  button:first-child {
+    margin-left: 118px;
+  }
+  button:last-child {
+    margin-right: 118px;
+  }
 }
