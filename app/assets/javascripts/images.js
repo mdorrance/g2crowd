@@ -1,14 +1,15 @@
 $(document).ready(function() {
-  fetchImages().then(renderImagesAndAddEventListeners)
+  fetchImages().then(renderImagesAndAddEventListeners);
 });
 
 function fetchImages() {
   return $.ajax({
     type: "GET",
     dataType: "jsonp",
-    url: "https://numberonelarge.com/tapjoy/jsonp.php"
+    url: "http://numberonelarge.com/tapjoy/jsonp.php"
   });
 }
+
 function sumTo(sum) {
   for (var i = 0; i < array.length; i++) {
     for (var j = array.length; j > i; j--) {
@@ -23,6 +24,7 @@ function sumTo(sum) {
     }
   }
 }
+
 function reorderByHeight(images) {
   var pairedImages = [];
   var sorted = images.sort(function (img1, img2) {
@@ -41,7 +43,7 @@ function reorderByHeight(images) {
     }
   }
   return $.merge(pairedImages, sorted);
-};
+}
 
 function renderImagesAndAddEventListeners(images) {
   var imagesLoaded = 0;
