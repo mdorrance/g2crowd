@@ -106,10 +106,10 @@ table {
     -webkit-column-gap: $gap;
     -moz-column-gap: $gap;
     column-gap: $gap;
+    height: 400px;
   }
-  .image {
+  img {
     display: inline-block;
     margin: 0px;
-    vertical-align: top;
   }
 }
