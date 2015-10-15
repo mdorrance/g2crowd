@@ -6,7 +6,7 @@ function fetchImages() {
   return $.ajax({
     type: "GET",
     dataType: "jsonp",
-    url: "http://numberonelarge.com/tapjoy/jsonp.php"
+    url: "https://numberonelarge.com/tapjoy/jsonp.php"
   });
 }
 function sumTo(sum) {
