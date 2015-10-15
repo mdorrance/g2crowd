@@ -29,9 +29,8 @@ RSpec.describe "Index page", type: :feature do
         expect(page).to have_content "Row 2 Column 2"
         expect(page).to have_content "Row 3 Column 3"
       end
-
       within("#images") do
-        expect(page).to have_css "img"
+        expect(page).to have_css ".grid"
       end
     end
   end
