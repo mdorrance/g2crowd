@@ -3,7 +3,9 @@
 Git clone the app into your machine.
 
 <tt>bundle</tt>
+
 <tt>rake db:migrate</tt>
+
 <tt>rails s</tt>
 
 visit localhost:3000 and view the images rendered to fit the bottom box
