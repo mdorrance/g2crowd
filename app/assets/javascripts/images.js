@@ -10,21 +10,6 @@ function fetchImages() {
   });
 }
 
-function sumTo(sum) {
-  for (var i = 0; i < array.length; i++) {
-    for (var j = array.length; j > i; j--) {
-      if (array[i] + array[j] === sum) {
-        var x = array[i];
-        var y = array[j];
-
-        array.splice(array[i-1], 1);
-        array.pop();
-        return [x,y];
-      }
-    }
-  }
-}
-
 function reorderByHeight(images) {
   var pairedImages = [];
   var sorted = images.sort(function (img1, img2) {
